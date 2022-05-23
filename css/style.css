@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body {
+  background: #F3F3F3;
+  margin: 20px;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 880px) {
+  body {
+    margin: 0;
+  }
+}
+
+header {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+  width: 100%;
+  margin: auto;
+}
+@media screen and (max-width: 880px) {
+  header {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 880px) {
+  header img {
+    display: none;
+  }
+}
+@media screen and (max-width: 880px) {
+  header h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.maincontainer {
+  max-width: 80%;
+  margin: auto;
+}
+@media screen and (max-width: 880px) {
+  .maincontainer {
+    max-width: 90%;
+  }
+}
+.maincontainer .current {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 880px) {
+  .maincontainer .current {
+    display: block;
+  }
+}
+.maincontainer .subcontainer {
+  display: flex;
+}
+@media screen and (max-width: 880px) {
+  .maincontainer .subcontainer {
+    display: block;
+  }
+}
+.maincontainer .subcontainer .container {
+  flex-basis: 60%;
+  margin-right: 20px;
+}
+@media screen and (max-width: 880px) {
+  .maincontainer .subcontainer .container {
+    margin-bottom: 30px;
+  }
+}
+.maincontainer .subcontainer .container .mainContent {
+  height: 400px;
+  overflow: auto;
+}
+.maincontainer .subcontainer .container .mainContent::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 10px;
+  background: rgb(148, 156, 148);
+}
+.maincontainer .subcontainer .container .mainContent::-webkit-scrollbar-thumb {
+  background: rgb(233, 102, 102);
+  border-radius: 10px;
+}
+@media screen and (max-width: 880px) {
+  .maincontainer .subcontainer .container .mainContent {
+    height: auto;
+  }
+}
+.maincontainer .subcontainer .container .mainContent .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #B4B4B4;
+  background-color: #ffffff;
+}
+.maincontainer .subcontainer .container .details {
+  padding: 20px 10px;
+}
+.maincontainer .subcontainer .container .details span {
+  background: linear-gradient(to top left, #39b385, #9be15d);
+}
+.maincontainer .subcontainer .container .details span:last-child {
+  background: none;
+}
+.maincontainer .subcontainer .container ul {
+  list-style: none;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+.maincontainer .subcontainer .container ul li {
+  color: #39b385;
+}
+.maincontainer .subcontainer .container ul li:nth-child(2) {
+  color: #e52a5a;
+}
+.maincontainer .subcontainer .container ul li:nth-child(4) {
+  color: #000;
+}
+.maincontainer .subcontainer .container ul li span {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  color: #000;
+}
+.maincontainer .subcontainer .container2 {
+  flex-basis: 40%;
+}
+.maincontainer .subcontainer .container2 .login {
+  text-align: end;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.maincontainer .subcontainer .container2 .content {
+  background: linear-gradient(to top left, #ffb003, #ffcb03);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.maincontainer .subcontainer .container2 .content:last-child {
+  margin: 0;
+}
+.maincontainer .subcontainer .container2 .content.request {
+  background: linear-gradient(to top left, #39b385, #9be15d);
+}
+.maincontainer .subcontainer .container2 .content.close {
+  background: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.maincontainer .subcontainer .container2 .content .contentInput {
+  display: flex;
+}
+.maincontainer .subcontainer .container2 .content .contentInput input {
+  display: block;
+  margin-right: 5px;
+}
+.maincontainer .subcontainer .container2 .content .contentInput .link {
+  width: 100px;
+}
+
+input {
+  width: 100px;
+  padding: 7px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+span {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+.total h3 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.red {
+  padding: 20px 10px;
+}
+.red span {
+  background: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.red span:last-child {
+  background: none;
+}
+
+.contentInput input {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 5px 20px;
+  border-radius: 7px;
+}
+.contentInput button {
+  border-radius: 7px;
+  width: 40px;
+  height: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
