@@ -130,7 +130,7 @@ header {
 }
 @media screen and (max-width: 880px) {
   .maincontainer .subcontainer .container .sort li {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 .maincontainer .subcontainer .container .sort li:nth-child(2) {
