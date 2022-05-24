@@ -56,7 +56,6 @@
                 }
             }
             .sort {
-                max-width: 100%;
                 list-style: none;
                 margin-top: 25px;
                 display: flex;
@@ -66,7 +65,9 @@
                 }
                 li {
                     color: #39b385;
-                    @media screen and (max-width: 880px) {}
+                    @media screen and (max-width: 880px) {
+                        font-size: 12px;
+                    }
                     &:nth-child(2) {
                         color: #e52a5a;
                     }

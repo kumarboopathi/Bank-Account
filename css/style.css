@@ -115,7 +115,6 @@ header {
   background: none;
 }
 .maincontainer .subcontainer .container .sort {
-  max-width: 100%;
   list-style: none;
   margin-top: 25px;
   display: flex;
@@ -128,6 +127,11 @@ header {
 }
 .maincontainer .subcontainer .container .sort li {
   color: #39b385;
+}
+@media screen and (max-width: 880px) {
+  .maincontainer .subcontainer .container .sort li {
+    font-size: 12px;
+  }
 }
 .maincontainer .subcontainer .container .sort li:nth-child(2) {
   color: #e52a5a;
