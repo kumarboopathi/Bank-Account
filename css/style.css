@@ -114,22 +114,28 @@ header {
 .maincontainer .subcontainer .container .details span:last-child {
   background: none;
 }
-.maincontainer .subcontainer .container ul {
+.maincontainer .subcontainer .container .sort {
+  max-width: 100%;
   list-style: none;
   margin-top: 25px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.maincontainer .subcontainer .container ul li {
+@media screen and (max-width: 880px) {
+  .maincontainer .subcontainer .container .sort {
+    width: 100%;
+  }
+}
+.maincontainer .subcontainer .container .sort li {
   color: #39b385;
 }
-.maincontainer .subcontainer .container ul li:nth-child(2) {
+.maincontainer .subcontainer .container .sort li:nth-child(2) {
   color: #e52a5a;
 }
-.maincontainer .subcontainer .container ul li:nth-child(4) {
+.maincontainer .subcontainer .container .sort li:nth-child(4) {
   color: #000;
 }
-.maincontainer .subcontainer .container ul li span {
+.maincontainer .subcontainer .container .sort li span {
   text-transform: uppercase;
   font-size: 10px;
   font-weight: 600;

@@ -55,13 +55,18 @@
                     }
                 }
             }
-            ul {
+            .sort {
+                max-width: 100%;
                 list-style: none;
                 margin-top: 25px;
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
+                @media screen and (max-width: 880px) {
+                    width: 100%;
+                }
                 li {
                     color: #39b385;
+                    @media screen and (max-width: 880px) {}
                     &:nth-child(2) {
                         color: #e52a5a;
                     }
